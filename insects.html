@@ -6,11 +6,31 @@
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" 
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <style>
+        .container-fluid {
+          border: 1px solid rgb(11, 11, 11);
+          border-radius: 4px;
+          padding: 5px;
+      
+        }
+        table, th, td {
+            border: double 4px black;
+        }
+        table {
+            width: 30%;
+            text-align: center;
+        }
+       tr{
+        background-color:pink;
+       }
+    </style>
+    
     <title>Anusha's Insects research platform</title>
 </head>
 <body>
     <h1>Insects by Anusha Bichal</h1>
     <div class="container">
+        
         <div class="row">
             <div class="col-sm-2">B</div>
             <div class="col-sm-2">I</div>
@@ -27,8 +47,95 @@
             <div class="col-md">Archaeognatha</div>
             <div class="col-md">Leaf Insects</div>
         </div>
+       
 
     </div>
     <p><h4>Bootstrap's grid system make use of containers,rows and columns to arrange and align the content given. It consists of a flexbox which is fully responsive in nature. That is the reason why the rows are converted into columns as we are compressing the pixels </h4></p>
+
+    <div class="container">
+        <img src="archaegnatha - Copy.jpg" class="img-fluid"  width=400 height=400 alt="Archaegnatha">
+        <img src="fly.jpg"class="img-fluid" width=400 height=400   alt="Fly">
+        <img src="leaf insects.jpg" class="img-fluid"  width=400  height=400  alt="Leaf Insects">
+      </div>
+      <div class="container-fluid" style="text-align:center">
+        <a target="_blank" href="archaegnatha - Copy.jpg">
+        <img src="archaegnatha - Copy.jpg" class="img-thumbnail" alt="Archaeognatha">
+        </a>
+        <a target="_blank" href="fly.jpg">
+        <img src="fly.jpg"class="img-thumbnail" alt="Fly">
+      </a>
+        <a target="_blank" href="leaf insects.jpg">
+        <img src="leaf insects.jpg" class="img-thumbnail" alt="Leaf Insects">
+      </a>
+      </div>
+      <table class="table">
+        
+          <tr class="table-success" >
+            <th scope="col" >Letter </th>
+            <th scope="col">Insect</th>
+            <th scope="col">City</th>
+            <th scope="col">River</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-warning" >
+            <th scope="row">B</th>
+            <td>Barklice</td>
+            <td>Berlington</td>
+            <td>Bear River</td>
+          </tr>
+          <tr class="table-warning" >
+            <th scope="row">I</th>
+            <td>Ice Bugs</td>
+            <td>Indiana</td>
+            <td>Ichetucknee River</td>
+          </tr>
+          <tr class="table-warning" >
+            <th scope="row">C</th>
+            <td>Cockroach</td>
+            <td>California</td>
+            <td>Cache Creek</td>
+          </tr>
+          <tr class="table-warning" >
+            <th scope="row">H</th>
+            <td>Housefly</td>
+            <td>Hemsphere</td>
+            <td>Hackensack River</td>
+          </tr>
+          <tr class="table-warning" >
+            <th scope="row">A</th>
+            <td>Archaeognatha</td>
+            <td>Atlanta</td>
+            <td>Alabama River</td>
+          </tr>
+          <tr class="table-warning">
+            <th scope="row">L</th>
+            <td>Leaf Insects</td>
+            <td>Las vegas</td>
+            <td>Lackawanna River</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="btn-group" role="group" aria-label="Basic outlined example">
+        <button type="button" class="btn btn-outline-primary">B</button>
+        <button type="button" class="btn btn-outline-primary">I</button>
+        <button type="button" class="btn btn-outline-primary">C</button>
+        <button type="button" class="btn btn-outline-primary">H</button>
+        <button type="button" class="btn btn-outline-primary">A</button>
+        <button type="button" class="btn btn-outline-primary">L</button>
+      </div><br>
+      <hr>
+      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-success">B</button>
+        <button type="button" class="btn btn-success">I</button>
+        <button type="button" class="btn btn-success">C</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-warning">H</button>
+        <button type="button" class="btn btn-warning">A</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-danger">L</button>
+      </div>
 </body>
 </html>
